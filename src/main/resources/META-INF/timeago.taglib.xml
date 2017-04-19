@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd"
+	version="2.2"
+>
+	<description>Time ago JSF component</description>
+	<namespace>http://jepsar.org/timeago</namespace>
+	<short-name>ta</short-name>
+
+	<tag>
+		<tag-name>timeAgo</tag-name>
+		<component>
+			<component-type>org.jepsar.component.TimeAgo</component-type>
+		</component>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<type>java.util.Date</type>
+		</attribute>
+	</tag>
+
+</facelet-taglib>
