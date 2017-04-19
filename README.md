@@ -1,6 +1,6 @@
 # Timeago JSF Component
 
-JSF component for the [Timeago jQuery plugin](https://github.com/rmm5t/jquery-timeago). This component will load
+JSF 2.2 component for the [Timeago jQuery plugin](https://github.com/rmm5t/jquery-timeago). This component will load
 jQuery, the timeago plugin and optionally a localization script.
 
 The current version is 1.0 and is bundled with Timeago 1.5.4.
@@ -19,13 +19,13 @@ Add this dependency to your `pom.xml`:
 
 In your XHTML files add the following namespace:
 
-````
+````xml
 xmlns:ta="http://jepsar.org/timeago"
 ````
 
 Now you can use the component by passing a `java.util.Date` using the `value` attribute:
 
-````
+````xml
 <ta:timeAgo value="#{bean.date}" />
 ````
 
@@ -39,6 +39,14 @@ Supported JSF component libraries at this moment:
 * PrimeFaces
 * BootsFaces
 
+If you are not using one of these libraries, it will load the bundled version of jQuery.
+
 ## Localization
 
 The component will try to load a localization script based on the JSF `UIViewRoot#getLocale()`.
+
+You can simply set it, for example to Dutch, in your XHTML like:
+
+````xml
+<f:view locale="nl">
+````
