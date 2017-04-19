@@ -11,9 +11,9 @@ Add this dependency to your `pom.xml`:
 
 ````xml
 <dependency>
-	<groupId>com.github.jepsar</groupId>
-	<artifactId>timeago-jsf</artifactId>
-	<version>1.0</version>
+  <groupId>com.github.jepsar</groupId>
+  <artifactId>timeago-jsf</artifactId>
+  <version>1.0</version>
 </dependency>
 ````
 
