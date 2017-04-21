@@ -44,7 +44,7 @@ If you are not using one of these libraries, it will load the bundled version of
 
 ## Localization
 
-The component will try to load a [localization script](tree/master/src/main/resources/META-INF/resources/jepsar/locale)
+The component will try to load a [localization script](./tree/master/src/main/resources/META-INF/resources/jepsar/locale)
 based on the JSF `UIViewRoot#getLocale()`.
 
 You can simply set it, for example to Dutch, in your XHTML like:
