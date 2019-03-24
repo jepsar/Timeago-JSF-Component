@@ -1,4 +1,9 @@
-# Timeago JSF Component
+# Timeago JSF Component has moved
+
+I've donated this component to [PrimeFaces Extensions](https://github.com/primefaces-extensions/core).
+It will be available in 7.0.1 with updated library and same usage.
+
+## Old info
 
 JSF 2.2 component for the [Timeago jQuery plugin](https://github.com/rmm5t/jquery-timeago) (that makes it easy to
 support automatically updating fuzzy timestamps (e.g. "4 minutes ago"). Timestamps are updated at the client side, which
@@ -6,7 +11,7 @@ save round trips to the server (reducing server load and saving bandwidth).
 
 The current version is 1.0 and is bundled with Timeago 1.5.4.
 
-## Usage
+### Usage
 
 Add this dependency to your `pom.xml`:
 
@@ -30,7 +35,7 @@ Now you can use the component by passing a `java.util.Date` using the `value` at
 <ta:timeAgo value="#{bean.date}" />
 ````
 
-## jQuery / JSF component library integration
+### jQuery / JSF component library integration
 
 The component will take care of loading jQuery. It tries to integrate with JSF component libraries that also rely on
 jQuery, so you won't end up with multiple / conflicting jQuery versions.
@@ -42,7 +47,7 @@ Supported JSF component libraries at this moment:
 
 If you are not using one of these libraries, it will load the bundled version of jQuery.
 
-## Localization
+### Localization
 
 The component will try to load a [localization script](https://github.com/jepsar/Timeago-JSF-Component/tree/master/src/main/resources/META-INF/resources/jepsar/locale)
 based on the JSF `UIViewRoot#getLocale()`.
